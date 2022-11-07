@@ -5,7 +5,7 @@
             Navbar Area
     :::::::::::::::::::::::::::::::::::*/
 
-     // Navbar Sticky
+    // Navbar Sticky
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
 
@@ -51,7 +51,7 @@
 
     $(function () {
         element.typed({
-            strings: ["Web Designer.", "Graphic Designer."],
+            strings: ["Front End Developer.", "Website Designer."],
             typeSpeed: 100,
             loop: true,
             autoplay: true,
@@ -95,10 +95,10 @@
         e.preventDefault();
         var formData = $(form).serialize();
         $.ajax({
-                type: 'POST',
-                url: $(form).attr('action'),
-                data: formData
-            })
+            type: 'POST',
+            url: $(form).attr('action'),
+            data: formData
+        })
             .done(function (response) {
                 $(formMessages).removeClass('error');
                 $(formMessages).addClass('success');
@@ -117,8 +117,8 @@
                 }
             });
     });
-    
-    
+
+
     /*::::::::::::::::::::::::::::::::::::
     Preloader
     ::::::::::::::::::::::::::::::::::::*/
