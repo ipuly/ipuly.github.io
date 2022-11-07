@@ -1,539 +1,1019 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="icon" href="img/favicon.png" type="image/png">
-        <title>MeetMe Personal</title>
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="vendors/linericon/style.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
-        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-        <link rel="stylesheet" href="vendors/animate-css/animate.css">
-        <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
-        <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
-        <!-- main css -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive.css">
-    </head>
-    <body>
-        
-        <!--================Header Menu Area =================-->
-        <header class="header_area">
-            <div class="main_menu">
-            	<nav class="navbar navbar-expand-lg navbar-light">
-					<div class="container box_1620">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-							<ul class="nav navbar-nav menu_nav ml-auto">
-								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
-								<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li> 
-								<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li> 
-								<li class="nav-item submenu dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
-									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-										<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
-									</ul>
-								</li> 
-								<li class="nav-item submenu dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
-									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-										<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
-									</ul>
-								</li> 
-								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-							</ul>
-						</div> 
-					</div>
-            	</nav>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8">
+    <title>Safs - HTML</title>
+
+    <!-- ====== Google Fonts ====== -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
+
+    <!-- ====== ALL CSS ====== -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar-nav">
+    
+     <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner">
+            <div class="cube1"></div>
+            <div class="cube2"></div>
+        </div>
+    </div>
+    <!-- // Preloader -->
+    
+
+    <!-- ====== Header ====== -->
+    <header id="header" class="header">
+        <!-- ====== Navbar ====== -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand logo" href="index.html">
+                    <img src="assets/images/logo.png" alt="logo">
+                </a>
+                <!-- // Logo -->
+
+                <!-- Mobile Menu -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false"><span><i class="fa fa-bars"></i></span></button>
+                <!-- Mobile Menu -->
+
+                <div class="collapse navbar-collapse main-menu" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#home">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#service">SERVICE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">PORTFOLIO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">BLOG</a></li>
+                        <li class="nav-item"><a class="nav-link pr0" href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
             </div>
-        </header>
-        <!--================Header Menu Area =================-->
-        
-        <!--================Home Banner Area =================-->
-        <section class="home_banner_area">
-           	<div class="container box_1620">
-           		<div class="banner_inner d-flex align-items-center">
-					<div class="banner_content">
-						<div class="media">
-							<div class="d-flex">
-								<img src="img/personal.jpg" alt="">
-							</div>
-							<div class="media-body">
-								<div class="personal_text">
-									<h6>Hello Everybody, i am</h6>
-									<h3>Donald McKinney</h3>
-									<h4>Junior UI/UX Developer</h4>
-									<p>You will begin to realise why this exercise is called the Dickens Pattern (with reference to the ghost showing Scrooge some different futures)</p>
-									<ul class="list basic_info">
-										<li><a href="#"><i class="lnr lnr-calendar-full"></i> 31st December, 1992</a></li>
-										<li><a href="#"><i class="lnr lnr-phone-handset"></i> 44 (012) 6954 783</a></li>
-										<li><a href="#"><i class="lnr lnr-envelope"></i> businessplan@donald</a></li>
-										<li><a href="#"><i class="lnr lnr-home"></i> Santa monica bullevard</a></li>
-									</ul>
-									<ul class="list personal_social">
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+        </nav>
+        <!-- ====== // Navbar ====== -->
+    </header>
+    <!-- ====== // Header ====== -->
+
+    <!-- ====== Hero Area ====== -->
+    <div class="hero-aria" id="home">
+        <!-- Hero Area Content -->
+        <div class="container">
+            <div class="hero-content h-100">
+                <div class="d-table">
+                    <div class="d-table-cell">
+                        <h2 class="text-uppercase">Let's Begin</h2>
+                        <h3 class="text-uppercase"><span class="typed"></span></h3>
+                        <p>Make designed by as Begindot.</p>
+                        <a href="#about" class="button smooth-scroll">Learn More</a>
+                    </div>
+                </div>
             </div>
-        </section>
-        <!--================End Home Banner Area =================-->
-        
-        <!--================Welcome Area =================-->
-        <section class="welcome_area p_120">
-        	<div class="container">
-        		<div class="row welcome_inner">
-        			<div class="col-lg-6">
-        				<div class="welcome_text">
-        					<h4>About Myself</h4>
-        					<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
-        					<div class="row">
-        						<div class="col-md-4">
-        							<div class="wel_item">
-        								<i class="lnr lnr-database"></i>
-        								<h4>$2.5M</h4>
-        								<p>Total Donation</p>
-        							</div>
-        						</div>
-        						<div class="col-md-4">
-        							<div class="wel_item">
-        								<i class="lnr lnr-book"></i>
-        								<h4>1465</h4>
-        								<p>Total Projects</p>
-        							</div>
-        						</div>
-        						<div class="col-md-4">
-        							<div class="wel_item">
-        								<i class="lnr lnr-users"></i>
-        								<h4>3965</h4>
-        								<p>Total Volunteers</p>
-        							</div>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-6">
-        				<div class="tools_expert">
-        					<div class="skill_main">
-								<div class="skill_item">
-									<h4>After Effects <span class="counter">85</span>%</h4>
-									<div class="progress_br">
-										<div class="progress">
-											<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-										</div>
-									</div>
-								</div>
-								<div class="skill_item">
-									<h4>Photoshop <span class="counter">90</span>%</h4>
-									<div class="progress_br">
-										<div class="progress">
-											<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-										</div>
-									</div>
-								</div>
-								<div class="skill_item">
-									<h4>Illustrator <span class="counter">70</span>%</h4>
-									<div class="progress_br">
-										<div class="progress">
-											<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-										</div>
-									</div>
-								</div>
-								<div class="skill_item">
-									<h4>Sublime <span class="counter">95</span>%</h4>
-									<div class="progress_br">
-										<div class="progress">
-											<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-										</div>
-									</div>
-								</div>
-								<div class="skill_item">
-									<h4>Sketch <span class="counter">75</span>%</h4>
-									<div class="progress_br">
-										<div class="progress">
-											<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Welcome Area =================-->
-        
-        <!--================My Tabs Area =================-->
-        <section class="mytabs_area p_120">
-        	<div class="container">
-        		<div class="tabs_inner">
-					<ul class="nav nav-tabs" id="myTab" role="tablist">
-						<li class="nav-item">
-							<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">My Experiences</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">My Education</a>
-						</li>
-					</ul>
-					<div class="tab-content" id="myTabContent">
-						<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-							<ul class="list">
-								<li>
-									<span></span>
-									<div class="media">
-										<div class="d-flex">
-											<p>March 2017 to present</p>
-										</div>
-										<div class="media-body">
-											<h4>Colorlib</h4>
-											<p>Senior Web Developer <br />Santa monica, Los angeles</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<span></span>
-									<div class="media">
-										<div class="d-flex">
-											<p>March 2017 to present</p>
-										</div>
-										<div class="media-body">
-											<h4>Colorlib</h4>
-											<p>Senior Web Developer <br />Santa monica, Los angeles</p>
-										</div>
-									</div>
-								</li>
-								<li>
-								<span></span>
-									<div class="media">
-										<div class="d-flex">
-											<p>March 2017 to present</p>
-										</div>
-										<div class="media-body">
-											<h4>Colorlib</h4>
-											<p>Senior Web Developer <br />Santa monica, Los angeles</p>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-							<ul class="list">
-								<li>
-									<span></span>
-									<div class="media">
-										<div class="d-flex">
-											<p>March 2017 to present</p>
-										</div>
-										<div class="media-body">
-											<h4>Colorlib</h4>
-											<p>Senior Web Developer <br />Santa monica, Los angeles</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<span></span>
-									<div class="media">
-										<div class="d-flex">
-											<p>March 2017 to present</p>
-										</div>
-										<div class="media-body">
-											<h4>Colorlib</h4>
-											<p>Senior Web Developer <br />Santa monica, Los angeles</p>
-										</div>
-									</div>
-								</li>
-								<li>
-								<span></span>
-									<div class="media">
-										<div class="d-flex">
-											<p>March 2017 to present</p>
-										</div>
-										<div class="media-body">
-											<h4>Colorlib</h4>
-											<p>Senior Web Developer <br />Santa monica, Los angeles</p>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End My Tabs Area =================-->
-        
-        <!--================Feature Area =================-->
-        <section class="feature_area p_120">
-        	<div class="container">
-        		<div class="main_title">
-        			<h2>offerings to my clients</h2>
-        			<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $.17 each.</p>
-        		</div>
-        		<div class="feature_inner row">
-        			<div class="col-lg-4 col-md-6">
-        				<div class="feature_item">
-        					<i class="flaticon-city"></i>
-        					<h4>Architecture</h4>
-        					<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $17 each.</p>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-6">
-        				<div class="feature_item">
-        					<i class="flaticon-skyline"></i>
-        					<h4>Interior Design</h4>
-        					<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $17 each.</p>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-6">
-        				<div class="feature_item">
-        					<i class="flaticon-sketch"></i>
-        					<h4>Concept Design</h4>
-        					<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $17 each.</p>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Feature Area =================-->
-        
-        <!--================Home Gallery Area =================-->
-        <section class="home_gallery_area p_120">
-        	<div class="container">
-        		<div class="main_title">
-        			<h2>Our Latest Featured Projects</h2>
-        			<p>Who are in extremely love with eco friendly system.</p>
-        		</div>
-        		<div class="isotope_fillter">
-        			<ul class="gallery_filter list">
-						<li class="active" data-filter="*"><a href="#">All</a></li>
-						<li data-filter=".brand"><a href="#">Vector</a></li>
-						<li data-filter=".manipul"><a href="#">Raster</a></li>
-						<li data-filter=".creative"><a href="#">UI/UX</a></li>
-						<li data-filter=".design"><a href="#">Printing</a></li>
-					</ul>
-        		</div>
-        	</div>
-        	<div class="container">
-        		<div class="gallery_f_inner row imageGallery1">
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand manipul design print">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-1.jpg" alt="">
-        						<a class="light" href="img/gallery/project-1.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>3D Helmet Design</h4>
-        						<p>Client Project</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand manipul creative">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-2.jpg" alt="">
-        						<a class="light" href="img/gallery/project-2.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>2D Vinyl Design</h4>
-        						<p>Client Project</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 manipul creative design print">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-3.jpg" alt="">
-        						<a class="light" href="img/gallery/project-3.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>Creative Poster Design</h4>
-        						<p>Client Project</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand creative print">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-4.jpg" alt="">
-        						<a class="light" href="img/gallery/project-4.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>Embosed Logo Design</h4>
-        						<p>Client Project</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand manipul design">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-5.jpg" alt="">
-        						<a class="light" href="img/gallery/project-5.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>3D Disposable Bottle</h4>
-        						<p>Client Project</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand creative">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-6.jpg" alt="">
-        						<a class="light" href="img/gallery/project-6.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>3D Logo Design</h4>
-        						<p>Client Project</p>
-        					</div>
-        				</div>
-        			</div>
-        		</div>
-        		<div class="more_btn">
-        			<a class="main_btn" href="#">Load More Items</a>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Home Gallery Area =================-->
-        
-        <!--================Testimonials Area =================-->
-        <section class="testimonials_area p_120">
-        	<div class="container">
-        		<div class="main_title">
-        			<h2>Testimonials</h2>
-        			<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $.17 each.</p>
-        		</div>
-        		<div class="testi_inner">
-					<div class="testi_slider owl-carousel">
-						<div class="item">
-							<div class="testi_item">
-								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her face</p>
-								<h4>Fanny Spencer</h4>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star-half-o"></i></a>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testi_item">
-								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her face</p>
-								<h4>Fanny Spencer</h4>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star-half-o"></i></a>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testi_item">
-								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her face</p>
-								<h4>Fanny Spencer</h4>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star-half-o"></i></a>
-							</div>
-						</div>
-					</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Testimonials Area =================-->
-        
-        <!--================Footer Area =================-->
-        <footer class="footer_area p_120">
-        	<div class="container">
-        		<div class="row footer_inner">
-        			<div class="col-lg-5 col-sm-6">
-        				<aside class="f_widget ab_widget">
-        					<div class="f_title">
-        						<h3>About Me</h3>
-        					</div>
-        					<p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills,</p>
-        					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-        				</aside>
-        			</div>
-        			<div class="col-lg-5 col-sm-6">
-        				<aside class="f_widget news_widget">
-        					<div class="f_title">
-        						<h3>Newsletter</h3>
-        					</div>
-        					<p>Stay updated with our latest trends</p>
-        					<div id="mc_embed_signup">
-                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
-                                	<div class="input-group d-flex flex-row">
-                                        <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
-                                        <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>		
-                                    </div>				
-                                    <div class="mt-10 info"></div>
-                                </form>
+        </div>
+        <!-- // Hero Area Content -->
+        <!-- Hero Area Slider -->
+        <div class="hero-area-slids owl-carousel">
+            <div class="single-slider">
+                <!-- Single Background -->
+                <div class="slider-bg" style="background-image: url(assets/images/hero-area/img-1.jpg)"></div>
+                <!-- // Single Background -->
+            </div>
+            <div class="single-slider">
+                <!-- Single Background -->
+                <div class="slider-bg" style="background-image: url(assets/images/hero-area/img-2.jpg)"></div>
+                <!-- // Single Background -->
+            </div>
+        </div>
+        <!-- // Hero Area Slider -->
+    </div>
+    <!-- ====== //Hero Area ====== -->
+
+    <!-- ====== Featured Area ====== -->
+    <section id="featured" class="section-padding pb-70">
+        <div class="container">
+            <div class="row">
+                <!-- single featured item -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-featured-item-wrap">
+                        <h3><a href="#">Graphic Design</a></h3>
+                        <div class="single-featured-item">
+                            <div class="featured-icon">
+                                <i class="fa fa-edit"></i>
                             </div>
-        				</aside>
-        			</div>
-        			<div class="col-lg-2">
-        				<aside class="f_widget social_widget">
-        					<div class="f_title">
-        						<h3>Follow Me</h3>
-        					</div>
-        					<p>Let us be social</p>
-        					<ul class="list">
-        						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-        						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        						<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-        						<li><a href="#"><i class="fa fa-behance"></i></a></li>
-        					</ul>
-        				</aside>
-        			</div>
-        		</div>
-        	</div>
-        </footer>
-        <!--================End Footer Area =================-->
-        
-        
-        
-        
-        
-        
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/stellar.js"></script>
-        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
-        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-        <script src="vendors/isotope/isotope.pkgd.min.js"></script>
-        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-        <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
-        <script src="js/jquery.ajaxchimp.min.js"></script>
-        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
-        <script src="vendors/counter-up/jquery.counterup.min.js"></script>
-        <script src="js/mail-script.js"></script>
-        <script src="js/theme.js"></script>
-    </body>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, voluptatibus, sunt. Recusandae ab aliquid voluptate exercitationem dicta ipsa, odio cumque sapiente quaerat nisi ad rem dolor iusto.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- single featured item -->
+                <!-- single featured item -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-featured-item-wrap">
+                        <h3><a href="#">Web Design</a></h3>
+                        <div class="single-featured-item">
+                            <div class="featured-icon">
+                                <i class="fa fa-code"></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, voluptatibus, sunt. Recusandae ab aliquid voluptate exercitationem dicta ipsa, odio cumque sapiente quaerat nisi ad rem dolor iusto.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- single featured item -->
+                <!-- single featured item -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-featured-item-wrap">
+                        <h3><a href="#">SEO Services</a></h3>
+                        <div class="single-featured-item">
+                            <div class="featured-icon">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, voluptatibus, sunt. Recusandae ab aliquid voluptate exercitationem dicta ipsa, odio cumque sapiente quaerat nisi ad rem dolor iusto.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- single featured item -->
+            </div>
+        </div>
+    </section>
+    <!-- ====== //Featured Area ====== -->
+
+    <!-- ====== About Area ====== -->
+    <section id="about" class="section-padding about-area bg-light">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>About Me</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus placeat unde non modi, facilis, quae?</p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-bg" style="background-image:url(assets/images/about-bg.jpg)">
+                        <!-- Social Link -->
+                        <div class="social-aria">
+                            <a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>
+                            <a target="_blank" href="#"><i class="fab fa-instagram"></i></a>
+                            <a target="_blank" href="#"><i class="fab fa-pinterest"></i></a>
+                            <a target="_blank" href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                        <!-- // Social Link -->
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h2>Hello, I am <span>AL Mamun</span></h2>
+                        <h4>Graphic Designer and Web Designer</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis numquam ipsam ut deleniti perferendis aliquid ullam, voluptatibus nam sunt eum laudantium cupiditate iste, obcaecati deserunt dolores aliquam quia cum minus animi ipsa est facere culpa fugiat, maxime quam! Itaque aperiam sequi accusantium impedit recusandae nobis quod sunt deserunt provident omnis.</p>
+
+                        <h5>My Skills</h5>
+
+                        <!-- Skill Area -->
+                        <div id="skills" class="skill-area">
+
+                            <!-- Single skill -->
+                            <div class="single-skill">
+                                <div class="skillbar" data-percent="100%">
+                                    <div class="skillbar-title"><span>HTML5</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">100%</div>
+                                </div>
+                            </div>
+                            <!-- //Single skill -->
+
+                            <!-- Single skill -->
+                            <div class="single-skill">
+                                <div class="skillbar" data-percent="85%">
+                                    <div class="skillbar-title"><span>CSS3</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">85%</div>
+                                </div>
+                            </div>
+                            <!-- //Single skill -->
+
+                            <!-- Single skill -->
+                            <div class="single-skill">
+                                <div class="skillbar" data-percent="50%">
+                                    <div class="skillbar-title"><span>JS</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">50%</div>
+                                </div>
+                            </div>
+                            <!-- //Single skill -->
+
+                        </div>
+                        <!-- //Skill Area -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====== // About Area ====== -->
+
+
+    <!-- ====== Fact Counter Section ====== -->
+    <!-- ====================================================================
+            NOTE: You need to change  'data-count="10"' and 'p' Eliments 
+        ===================================================================== -->
+    <section class="section-padding pb-70 bg-img fact-counter" id="counter" style="background-image: url(assets/images/fan-fact-bg.jpg)">
+        <div class="container">
+            <div class="row">
+                <!-- Single Fact Counter -->
+                <div class="col-lg-3 co col-md-6 l-md-6 text-center">
+                    <div class="single-fun-fact">
+                        <h2><span class="counter-value" data-count="08">0</span>+</h2>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+                <!-- // Single Fact Counter -->
+                <!-- Single Fact Counter -->
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="single-fun-fact">
+                        <h2><span class="counter-value" data-count="600">0</span>+</h2>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+                <!-- // Single Fact Counter -->
+                <!-- Single Fact Counter -->
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="single-fun-fact">
+                        <h2><span class="counter-value" data-count="09">0</span>+</h2>
+                        <p>Awards Win</p>
+                    </div>
+                </div>
+                <!-- // Single Fact Counter -->
+                <!-- Single Fact Counter -->
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="single-fun-fact">
+                        <h2><span class="counter-value" data-count="451">0</span>+</h2>
+                        <p>Cups of Coffee</p>
+                    </div>
+                </div>
+                <!-- // Single Fact Counter -->
+            </div>
+        </div>
+    </section>
+    <!-- ====== //Fact Counter Section ====== -->
+
+    <!-- ====== Service Section ====== -->
+    <section id="service" class="section-padding pb-70 service-area bg-light">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>Service</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+
+            <div class="row">
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <i class="fa fa-code"></i>
+                        </div>
+                        <h2>Web Design</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente minima repudiandae amet, accusamus ea impedit aperiam consectetur libero. Deleniti id sit minima.</p>
+                    </div>
+                </div>
+                <!-- //Single Service -->
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <i class="fa fa-chart-area"></i>
+                        </div>
+                        <h2>Business Services</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente minima repudiandae amet, accusamus ea impedit aperiam consectetur libero. Deleniti id sit minima.</p>
+                    </div>
+                </div>
+                <!-- //Single Service -->
+                <!-- Single Service -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <i class="fa fa-chart-line"></i>
+                        </div>
+                        <h2>Business Services</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente minima repudiandae amet, accusamus ea impedit aperiam consectetur libero. Deleniti id sit minima.</p>
+                    </div>
+                </div>
+                <!-- //Single Service -->
+            </div>
+
+        </div>
+    </section>
+    <!-- ====== //Service Section ====== -->
+
+    <!-- ====== Why choose Me Section ====== -->
+    <section id="" class="section-padding why-choose-us pb-70">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>Why choose Me</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+            <div class="row">
+                <!-- Single Why choose me -->
+                <div class="col-md-6">
+                    <div class="single-why-me why-me-left">
+                        <div class="why-me-icon">
+                            <div class="d-table">
+                                <div class="d-table-cell">
+                                    <i class="fa fa-clock"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Completed on right time</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem laboriosam, soluta voluptate, quod dolore facilis iusto eligendi.</p>
+                    </div>
+                </div>
+                <!-- // Single Why choose me -->
+
+                <!-- Single Why choose me -->
+                <div class="col-md-6">
+                    <div class="single-why-me why-me-right">
+                        <div class="why-me-icon">
+                            <div class="d-table">
+                                <div class="d-table-cell">
+                                    <i class="fa fa-calendar-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Completed on right time</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem laboriosam, soluta voluptate, quod dolore facilis iusto eligendi.</p>
+                    </div>
+                </div>
+                <!-- // Single Why choose me -->
+
+                <!-- Single Why choose me -->
+                <div class="col-md-6">
+                    <div class="single-why-me why-me-left">
+                        <div class="why-me-icon">
+                            <div class="d-table">
+                                <div class="d-table-cell">
+                                    <i class="fa fa-history"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Completed on right time</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem laboriosam, soluta voluptate, quod dolore facilis iusto eligendi.</p>
+                    </div>
+                </div>
+                <!-- // Single Why choose me -->
+
+                <!-- Single Why choose me -->
+                <div class="col-md-6">
+                    <div class="single-why-me why-me-right">
+                        <div class="why-me-icon">
+                            <div class="d-table">
+                                <div class="d-table-cell">
+                                    <i class="fa fa-phone-volume"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Completed on right time</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem laboriosam, soluta voluptate, quod dolore facilis iusto eligendi.</p>
+                    </div>
+                </div>
+                <!-- // Single Why choose me -->
+            </div>
+        </div>
+    </section>
+    <!-- ====== //Why choose Me Section ====== -->
+
+    <!-- ====== Portfolio Section ====== -->
+    <section id="portfolio" class="section-padding pb-85 portfolio-area bg-light">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>Recent Work</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+            <div class="row justify-content-center">
+                <!-- Work List Menu-->
+                <div class="col-lg-8">
+                    <div class="work-list text-center">
+                        <ul>
+                            <li class="filter" class="active" data-filter="all">ALL</li>
+                            <li class="filter" data-filter=".web">Web Design</li>
+                            <li class="filter" data-filter=".graphic">Graphic</li>
+                            <li class="filter" data-filter=".logo">Logo</li>
+                            <li class="filter" data-filter=".wp">Wordpress</li>
+                            <li class="filter" data-filter=".other">Other</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- // Work List Menu -->
+            </div>
+            <div class="row portfolio">
+                <!-- Single Portfolio -->
+                <div class="col-lg-4 col-md-6 mix wp graphic">
+                    <div class="single-portfolio" style="background-image: url(assets/images/portfolio/img-1.jpg)">
+                        <div class="portfolio-icon text-center">
+                            <a data-lightbox='lightbox' href="assets/images/portfolio/img-1.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                        </div>
+                        <div class="portfolio-hover">
+                            <h4>Project <span>Name</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Portfolio -->
+                <!-- Single Portfolio -->
+                <div class="col-lg-4 col-md-6 mix logo web graphic other wp">
+                    <div class="single-portfolio" style="background-image: url(assets/images/portfolio/img-2.jpg)">
+                        <div class="portfolio-icon text-center">
+                            <a data-lightbox='lightbox' href="assets/images/portfolio/img-2.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                        </div>
+                        <div class="portfolio-hover">
+                            <h4>Project <span>Name</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Portfolio -->
+                <!-- Single Portfolio -->
+                <div class="col-lg-4 col-md-6 mix wp other">
+                    <div class="single-portfolio" style="background-image: url(assets/images/portfolio/img-3.jpg)">
+                        <div class="portfolio-icon text-center">
+                            <a data-lightbox='lightbox' href="assets/images/portfolio/img-3.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                        </div>
+                        <div class="portfolio-hover">
+                            <h4>Project <span>Name</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Portfolio -->
+                <!-- Single Portfolio -->
+                <div class="col-lg-4 col-md-6 mix logo other graphic wp web">
+                    <div class="single-portfolio" style="background-image: url(assets/images/portfolio/img-4.jpg)">
+                        <div class="portfolio-icon text-center">
+                            <a data-lightbox='lightbox' href="assets/images/portfolio/img-4.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                        </div>
+                        <div class="portfolio-hover">
+                            <h4>Project <span>Name</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Portfolio -->
+                <!-- Single Portfolio -->
+                <div class="col-lg-4 col-md-6 mix logo other wp graphic web">
+                    <div class="single-portfolio" style="background-image: url(assets/images/portfolio/img-5.jpg)">
+                        <div class="portfolio-icon text-center">
+                            <a data-lightbox='lightbox' href="assets/images/portfolio/img-5.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                        </div>
+                        <div class="portfolio-hover">
+                            <h4>Project <span>Name</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Portfolio -->
+                <!-- Single Portfolio -->
+                <div class="col-lg-4 col-md-6 mix wp logo graphic web">
+                    <div class="single-portfolio" style="background-image: url(assets/images/portfolio/img-6.jpg)">
+                        <div class="portfolio-icon text-center">
+                            <a data-lightbox='lightbox' href="assets/images/portfolio/img-6.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                        </div>
+                        <div class="portfolio-hover other">
+                            <h4>Project <span>Name</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Portfolio -->
+                <!-- Single Portfolio -->
+                <div class="col-lg-4 col-md-6 mix web wp">
+                    <div class="single-portfolio" style="background-image: url(assets/images/portfolio/img-7.jpg)">
+                        <div class="portfolio-icon text-center">
+                            <a data-lightbox='lightbox' href="assets/images/portfolio/img-7.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                        </div>
+                        <div class="portfolio-hover">
+                            <h4>Project <span>Name</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Portfolio -->
+                <!-- Single Portfolio -->
+                <div class="col-lg-4 col-md-6 mix logo graphic wp web">
+                    <div class="single-portfolio" style="background-image: url(assets/images/portfolio/img-8.jpg)">
+                        <div class="portfolio-icon text-center">
+                            <a data-lightbox='lightbox' href="assets/images/portfolio/img-8.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                        </div>
+                        <div class="portfolio-hover">
+                            <h4>Project <span>Name</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Portfolio -->
+                <!-- Single Portfolio -->
+                <div class="col-lg-4 col-md-6 mix other logo web">
+                    <div class="single-portfolio" style="background-image: url(assets/images/portfolio/img-9.jpg)">
+                        <div class="portfolio-icon text-center">
+                            <a data-lightbox='lightbox' href="assets/images/portfolio/img-9.jpg"><i class="fas fa-expand-arrows-alt"></i></a>
+                        </div>
+                        <div class="portfolio-hover">
+                            <h4>Project <span>Name</span></h4>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Portfolio -->
+            </div>
+        </div>
+    </section>
+    <!-- ====== // Portfolio Section ====== -->
+
+    <!-- ====== Frequently asked questions ====== -->
+    <section class="section-padding faq-area bg-secondary">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center faq-title">
+                        <h2>Frequently asked questions</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="faq-bg bg-img" style="background-image: url(assets/images/faq.jpeg)"></div>
+                </div>
+                <div class="col-lg-7">
+                    <!-- FAQ Content -->
+                    <div class="faq-content" id="accordion">
+
+                        <!-- Single FAQ -->
+                        <div class="single-faq">
+
+                            <!-- FAQ Header -->
+                            <h4 class="collapsed" data-toggle="collapse" data-target="#faq-1">Collapsible Group Item One</h4>
+                            <!-- // FAQ Header -->
+
+                            <!-- FAQ Content -->
+                            <div id="faq-1" class="collapse show" data-parent="#accordion">
+                                <div class="faq-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat illo et, eum rerum nihil totam. Dolore atque quasi aspernatur fugiat commodi pariatur dignissimos, similique deleniti alias cumque, ea dolorum maiores, reprehenderit iusto quo officiis magni quibusdam est illum repellat adipisci quam qui error fugit? Fuga quam doloribus quas voluptas ducimus, adipisci minima quo consequatur ex!
+                                </div>
+                            </div>
+                            <!-- FAQ Content -->
+                        </div>
+                        <!-- // Single FAQ -->
+
+                        <!-- Single FAQ -->
+                        <div class="single-faq">
+
+                            <!-- FAQ Header -->
+                            <h4 class="collapsed" data-toggle="collapse" data-target="#faq-2">Lorem ipsum dolor sit amet Two</h4>
+                            <!-- // FAQ Header -->
+
+                            <!-- FAQ Content -->
+                            <div id="faq-2" class="collapse" data-parent="#accordion">
+                                <div class="faq-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat illo et, eum rerum nihil totam. Dolore atque quasi aspernatur fugiat commodi pariatur dignissimos, similique deleniti alias cumque, ea dolorum maiores, reprehenderit iusto quo officiis magni quibusdam est illum repellat adipisci quam qui error fugit? Fuga quam doloribus quas voluptas ducimus, adipisci minima quo consequatur ex!
+                                </div>
+                            </div>
+                            <!-- FAQ Content -->
+                        </div>
+                        <!-- // Single FAQ -->
+
+                        <!-- Single FAQ -->
+                        <div class="single-faq">
+
+                            <!-- FAQ Header -->
+                            <h4 class="collapsed" data-toggle="collapse" data-target="#faq-3">Collapsible Group Item Three</h4>
+                            <!-- // FAQ Header -->
+
+                            <!-- FAQ Content -->
+                            <div id="faq-3" class="collapse" data-parent="#accordion">
+                                <div class="faq-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat illo et, eum rerum nihil totam. Dolore atque quasi aspernatur fugiat commodi pariatur dignissimos, similique deleniti alias cumque, ea dolorum maiores, reprehenderit iusto quo officiis magni quibusdam est illum repellat adipisci quam qui error fugit? Fuga quam doloribus quas voluptas ducimus, adipisci minima quo consequatur ex!
+                                </div>
+                            </div>
+                            <!-- FAQ Content -->
+                        </div>
+                        <!-- // Single FAQ -->
+
+                    </div>
+                    <!-- FAQ Content -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====== // Frequently asked questions ====== -->
+
+    <!-- ====== Blog Section ====== -->
+    <section class="section-padding pb-70 blog-section bg-light">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>Blog Area</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+            <div class="row">
+                <!-- Single Blog -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog">
+                        <div class="blog-thumb" style="background-image: url(assets/images/blog/img-1.jpg)"></div>
+                        <h4 class="blog-title"><a href="single-blog.html">Full Responsive</a></h4>
+                        <p class="blog-meta"><a href="#">AL Mamun</a>, 22 FEB 2018</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque similique velit, officiis non.</p>
+                        <a href="single-blog.html" class="button">Read More</a>
+                    </div>
+                </div>
+                <!-- Single Blog -->
+                <!-- Single Blog -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog">
+                        <div class="blog-thumb" style="background-image: url(assets/images/blog/img-2.jpg)"></div>
+                        <h4 class="blog-title"><a href="single-blog.html">Lifetime free Update</a></h4>
+                        <p class="blog-meta"><a href="#">AL Mamun</a>, 22 FEB 2018</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque similique velit, officiis non.</p>
+                        <a href="single-blog.html" class="button">Read More</a>
+                    </div>
+                </div>
+                <!-- Single Blog -->
+                <!-- Single Blog -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog">
+                        <div class="blog-thumb" style="background-image: url(assets/images/blog/img-3.jpg)"></div>
+                        <h4 class="blog-title"><a href="single-blog.html">Unlimited Support</a></h4>
+                        <p class="blog-meta"><a href="#">AL Mamun</a>, 22 FEB 2018</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque similique velit, officiis non.</p>
+                        <a href="single-blog.html" class="button">Read More</a>
+                    </div>
+                </div>
+                <!-- Single Blog -->
+            </div>
+        </div>
+    </section>
+    <!-- ====== // Blog Section ====== -->
+
+
+    <!-- ====== Testimonial Section ====== -->
+    <section id="testimonial" class="section-padding bg-secondary testimonial-area">
+        <div class="container bg-white">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>Testimonial</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="testimonials owl-carousel" data-ride="carousel">
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial text-center">
+                            <div class="testimonial-quote">
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam nam suscipit similique quod eaque adipisci modi recusandae nesciunt veniam, ut, rem eligendi minima et, accusantium?</p>
+                            <h4>Aseven M <span>CEO - aseven.info</span></h4>
+
+                        </div>
+                        <!-- // Single Testimonial -->
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial text-center">
+                            <div class="testimonial-quote">
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam nam suscipit similique quod eaque adipisci modi recusandae nesciunt veniam, ut, rem eligendi minima et, accusantium?</p>
+                            <h4>Aseven M <span>CEO - aseven.info</span></h4>
+
+                        </div>
+                        <!-- // Single Testimonial -->
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial text-center">
+                            <div class="testimonial-quote">
+                                <i class="fa fa-quote-right"></i>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam nam suscipit similique quod eaque adipisci modi recusandae nesciunt veniam, ut, rem eligendi minima et, accusantium?</p>
+                            <h4>Aseven M <span>CEO - aseven.info</span></h4>
+
+                        </div>
+                        <!-- // Single Testimonial -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====== // Testimonial Section ====== -->
+
+    <!-- ====== Team Section ====== -->
+    <section class="section-padding pb-70 team-area">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>Team</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+            <div class="row">
+                <!-- Single Team -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-team">
+                        <div class="team-thumb" style="background-image: url(assets/images/team/img-1.jpg)">
+                            <div class="team-social">
+                                <a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>
+                                <a target="_blank" href="#"><i class="fab fa-linkedin"></i></a>
+                                <a target="_blank" href="#"><i class="fab fa-pinterest"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h4>AL Mamun</h4>
+                            <span>CEO Founder</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Team -->
+                <!-- Single Team -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-team">
+                        <div class="team-thumb" style="background-image: url(assets/images/team/img-2.jpg)">
+                            <div class="team-social">
+                                <a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>
+                                <a target="_blank" href="#"><i class="fab fa-linkedin"></i></a>
+                                <a target="_blank" href="#"><i class="fab fa-pinterest"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h4>AL Mamun</h4>
+                            <span>CEO Founder</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Team -->
+                <!-- Single Team -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-team">
+                        <div class="team-thumb" style="background-image: url(assets/images/team/img-3.jpg)">
+                            <div class="team-social">
+                                <a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>
+                                <a target="_blank" href="#"><i class="fab fa-linkedin"></i></a>
+                                <a target="_blank" href="#"><i class="fab fa-pinterest"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h4>AL Mamun</h4>
+                            <span>CEO Founder</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Team -->
+                <!-- Single Team -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-team">
+                        <div class="team-thumb" style="background-image: url(assets/images/team/img-4.jpg)">
+                            <div class="team-social">
+                                <a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>
+                                <a target="_blank" href="#"><i class="fab fa-linkedin"></i></a>
+                                <a target="_blank" href="#"><i class="fab fa-pinterest"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h4>AL Mamun</h4>
+                            <span>CEO Founder</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- // Single Team -->
+            </div>
+        </div>
+    </section>
+    <!-- ====== // Team Section ====== -->
+
+
+    <!-- ====== Call to Action Area ====== -->
+    <section class="section-padding call-to-action-aria bg-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla fugit optio voluptatem modi, nemo, cupiditate vel, aspernatur, quae consequatur officia unde totam.</p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="cta-button">
+                        <div class="d-table">
+                            <div class="d-table-cell">
+                                <a href="#" class="button">Contact me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ====== // Call to Action Area ====== -->
+
+
+    <!-- ====== Pricing Area ====== -->
+    <section class="section-padding pb-70 pricing-area">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>Pricing Area</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+            <div class="row">
+                <!-- Single Price Box -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-price-box text-center">
+                        <div class="price-head">
+                            <h2>Basic</h2>
+                            <h3>$99<span>/ Per Month</span></h3>
+                        </div>
+                        <ul>
+                            <li>Basic Feature</li>
+                            <li>Best Output</li>
+                            <li>Free Update</li>
+                            <li>Live chat</li>
+                        </ul>
+                        <a href="#" class="button">PURCHASE NOW</a>
+                    </div>
+                </div>
+                <!-- // Single Price Box -->
+                <!-- Single Price Box -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-price-box text-center">
+                        <div class="price-head">
+                            <h2>Premium</h2>
+                            <h3>$119<span>/ Per Month</span></h3>
+                        </div>
+                        <ul>
+                            <li>Basic Feature</li>
+                            <li>Best Output</li>
+                            <li>Free Update</li>
+                            <li>Live chat</li>
+                        </ul>
+                        <a href="#" class="button">PURCHASE NOW</a>
+                    </div>
+                </div>
+                <!-- // Single Price Box -->
+                <!-- Single Price Box -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-price-box text-center">
+                        <div class="price-head">
+                            <h2>Enterprise</h2>
+                            <h3>$559<span>/ Per Month</span></h3>
+                        </div>
+                        <ul>
+                            <li>Basic Feature</li>
+                            <li>Best Output</li>
+                            <li>Free Update</li>
+                            <li>Live chat</li>
+                        </ul>
+                        <a href="#" class="button">PURCHASE NOW</a>
+                    </div>
+                </div>
+                <!-- // Single Price Box -->
+                <!-- Single Price Box -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-price-box text-center">
+                        <div class="price-head">
+                            <h2>Business</h2>
+                            <h3>$999<span>/ Per Month</span></h3>
+                        </div>
+                        <ul>
+                            <li>Basic Feature</li>
+                            <li>Best Output</li>
+                            <li>Free Update</li>
+                            <li>Live chat</li>
+                        </ul>
+                        <a href="#" class="button">PURCHASE NOW</a>
+                    </div>
+                </div>
+                <!-- // Single Price Box -->
+            </div>
+        </div>
+    </section>
+    <!-- ====== // Pricing Area ====== -->
+
+
+    <!-- ====== Contact Area ====== -->
+    <section id="contact" class="section-padding contact-section bg-light">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="row justify-content-center">
+                <div class="col-lg-6 ">
+                    <div class="section-title text-center">
+                        <h2>Contact Me</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- //Section Title -->
+
+            <!-- Contact Form -->
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <!-- Form -->
+                    <form id="contact-form" action="mail.php" method="post" class="contact-form bg-white">
+                        <div class="row">
+                            <div class="col-lg-6 form-group">
+                                <input type="text" class="form-control" name="name" required placeholder="Name">
+                            </div>
+                            <div class="col-lg-6 form-group">
+                                <input type="email" class="form-control" name="email" required placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="subject" required placeholder="Subject">
+                        </div>
+
+                        <div class="form-group">
+                            <textarea name="message" id="" class="form-control" required placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-btn text-center">
+                            <button class="button" type="submit">Send Message</button>
+                            <p class="form-message"></p>
+                        </div>
+                    </form>
+                    <!-- // Form -->
+                </div>
+            </div>
+            <!-- // Contact Form -->
+        </div>
+    </section>
+    <!-- ====== // Contact Area ====== -->
+
+
+    <!-- ====== Footer Area ====== -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="copyright-text">
+                        <p class="text-white">&copy; 2018 <a href="https://www.begindot.com/">A Template Designed by Begindot</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ====== // Footer Area ====== -->
+
+
+
+
+
+
+     <!-- ====== ALL JS ====== -->
+   <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/lightbox.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.mixitup.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/typed.js"></script>
+    <script src="assets/js/skill.bar.js"></script>
+    <script src="assets/js/fact.counter.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
