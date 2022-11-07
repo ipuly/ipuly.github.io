@@ -13,6 +13,7 @@
         position: static;
         background-color: #000;
     }
+
     button.navbar-toggler {
         color: #fff;
     }
@@ -21,18 +22,22 @@
         background-color: #333;
         margin-top: 30px;
     }
+
     .nav-item {
         border-bottom: 1px solid;
     }
+
     nav .main-menu .navbar-nav .nav-item .nav-link {
         padding: 15px 15px;
     }
+
     /*::::::::::::::::::::::::::::::::::::
        Hero Area 
     ::::::::::::::::::::::::::::::::::::*/
     .hero-content h2 {
         font-size: 70px;
     }
+
     /*::::::::::::::::::::::::::::::::::::
        About Area
     ::::::::::::::::::::::::::::::::::::*/
@@ -53,6 +58,7 @@
     .faq-content {
         margin-top: 15px;
     }
+
     /*::::::::::::::::::::::::::::::::::::
        Call to Action Area
     ::::::::::::::::::::::::::::::::::::*/
@@ -65,6 +71,7 @@
 /* Mobile Layout: 320px. */
 
 @media only screen and (max-width: 767px) {
+
     /*::::::::::::::::::::::::::::::::::::
        Section Title
     ::::::::::::::::::::::::::::::::::::*/
@@ -79,6 +86,7 @@
         position: static;
         background-color: #000;
     }
+
     button.navbar-toggler {
         color: #fff;
     }
@@ -87,12 +95,15 @@
         background-color: #333;
         margin-top: 30px;
     }
+
     .nav-item {
         border-bottom: 1px solid;
     }
+
     nav .main-menu .navbar-nav .nav-item .nav-link {
         padding: 15px 15px;
     }
+
     /*::::::::::::::::::::::::::::::::::::
        Hero Area 
     ::::::::::::::::::::::::::::::::::::*/
@@ -101,6 +112,7 @@
     .single-slider {
         height: 440px;
     }
+
     .hero-content h2 {
         font-size: 30px;
     }
@@ -113,6 +125,7 @@
     .hero-aria::after {
         width: 80%;
     }
+
     .hero-content {
         max-width: 70%;
     }
@@ -123,15 +136,18 @@
     .single-featured-item-wrap h3 {
         font-size: 20px;
     }
+
     .featured-icon {
         font-size: 40px;
     }
+
     /*::::::::::::::::::::::::::::::::::::
        Portfolio Section
     ::::::::::::::::::::::::::::::::::::*/
     .work-list ul li {
         margin-bottom: 5px;
     }
+
     .portfolio-hover h4 {
         font-size: 18px;
     }
@@ -142,9 +158,11 @@
     .about-content {
         margin-top: 30px;
     }
+
     .about-content h2 {
         font-size: 24px;
     }
+
     .about-content h4 {
         font-size: 16px;
     }
@@ -171,6 +189,7 @@
     .faq-content {
         margin-top: 15px;
     }
+
     .single-faq h4 {
         padding-right: 60px;
         font-size: 16px;
@@ -183,6 +202,7 @@
     h4.blog-title {
         font-size: 16px;
     }
+
     /*::::::::::::::::::::::::::::::::::::
        Call to Action Area
     ::::::::::::::::::::::::::::::::::::*/
@@ -199,11 +219,13 @@
     .single-why-me h4 {
         font-size: 20px;
     }
+
     .why-me-right .why-me-icon,
     .why-me-left .why-me-icon {
         position: relative;
         height: 100px;
     }
+
     .single-why-me.why-me-right,
     .single-why-me {
         padding: 0;
@@ -218,6 +240,7 @@
         margin: auto;
         margin-bottom: 30px;
     }
+
     /*::::::::::::::::::::::::::::::::::::
        Pricing Area
     ::::::::::::::::::::::::::::::::::::*/
@@ -247,6 +270,7 @@
         position: static;
         background-color: #000;
     }
+
     button.navbar-toggler {
         color: #fff;
     }
@@ -255,12 +279,15 @@
         background-color: #333;
         margin-top: 30px;
     }
+
     .nav-item {
         border-bottom: 1px solid;
     }
+
     nav .main-menu .navbar-nav .nav-item .nav-link {
         padding: 15px 15px;
     }
+
     /*::::::::::::::::::::::::::::::::::::
        Hero Area 
     ::::::::::::::::::::::::::::::::::::*/
@@ -276,9 +303,11 @@
     .hero-aria::after {
         width: 70%;
     }
+
     .hero-content {
         max-width: 65%;
     }
+
     /*::::::::::::::::::::::::::::::::::::
        Portfolio Section
     ::::::::::::::::::::::::::::::::::::*/
@@ -306,6 +335,7 @@
     .faq-content {
         margin-top: 15px;
     }
+
     /*::::::::::::::::::::::::::::::::::::
        Call to Action Area
     ::::::::::::::::::::::::::::::::::::*/
@@ -322,6 +352,7 @@
         margin: auto;
         margin-bottom: 30px;
     }
+
     /*::::::::::::::::::::::::::::::::::::
        Pricing Area
     ::::::::::::::::::::::::::::::::::::*/
