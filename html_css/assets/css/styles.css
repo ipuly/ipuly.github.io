@@ -1,0 +1,109 @@
+.container-welcome {
+    min-height: 90vh;
+}
+
+.content {
+    min-height: 100vh;
+}
+
+.contact-me {
+    min-height: 100vh;
+}
+
+a,
+a:hover {
+    color: #212529;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.block {
+    height: 350px;
+    background: rgba(86, 61, 124, .15);
+    margin-bottom: 30px;
+}
+
+.label {
+    font-size: .85rem;
+    font-weight: bold;
+}
+
+h2,
+ul {
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.container-fluid {
+    max-width: 1200px;
+}
+
+.list-top {
+    margin-left: 50px;
+}
+
+.list li:not(:last-child) {
+    margin-right: 15px;
+}
+
+.list li a {
+    transition: color 0.2s;
+}
+
+.list li a:hover {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+    .list-top {
+        position: absolute;
+        /*equal to nav height, use JS to calculate nav height in case you don't explicitly define it in your CSS*/
+        top: 70px;
+        left: 0;
+        right: 0;
+        transform: translateX(-100%);
+        margin-left: 0;
+        padding: 1rem;
+        transition: transform 0.3s;
+    }
+
+    .nav-top.is-active .list-top {
+        transform: none;
+    }
+
+    .list-top li {
+        flex-grow: 1;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.backToTop {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 59;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: all .3s;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center center;
+}
+
+.backToTop:hover {
+    background: #1d2129 url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center center;
+}
